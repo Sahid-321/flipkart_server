@@ -19,6 +19,10 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use("/",Router);
 
+app.get("/",(req,res)=>{
+    res.send("hello sahid")
+})
+
 const port = process.env.PORT || 8000;
 
 const USERNAME=process.env.DB_USERNAME;
